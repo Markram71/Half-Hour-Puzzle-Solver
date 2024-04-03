@@ -21,16 +21,27 @@ The following lines are printed out to the console when the script finishes afte
 
 `Yeah, hurray, we found a solution!!!
 This is here is the solution: All 6 puzzle pieces fitted into a cube:
+
 dba
+
 dda
+
 daa
 
+
+
 bbb
+
 ecf
+
 dcf
 
+
+
 eef
+
 eff
+
 ccc`
 
 ### How to interprete the Result
@@ -39,6 +50,8 @@ Each of the six elements is represented by a letter ("a" to "g"). As this cube i
 With that, I was able to construct the solution of the puzzle. And yeah, it worked. 
 
 ## References
+
+*[A short description of the puzzle by J. A. Storer which also shows a hint to the solution](https://www.cs.brandeis.edu/~storer/JimPuzzles/CUBE/HalfHour/HalfHour.pdf)
 
 * [A 3D pinted version](https://www.printables.com/de/model/171109-half-hour-assembly-puzzle-by-stewart-coffin-stc-29)
 
