@@ -19,19 +19,8 @@ I am quite sure you can simply copy and paste it into any Python environment and
 ## The Result 
 The following lines are printed out to the console when the script finishes after only a few seconds. The solution is not immediately visible. Yet, I was very excited when I first saw this result for the first time, because until that point in time I did not solve the puzzle.   
 
-`Yeah, hurray, we found a solution!!!
-This is here is the solution: All 6 puzzle pieces fitted into a cube:
-dba
-dda
-daa
+![result of the script showing that we found a solution to the puzzle](result-of-the-script.png)
 
-bbb
-ecf
-dcf
-
-eef
-eff
-ccc`
 
 ### How to interprete the Result
 Each of the six elements is represented by a letter ("a" to "g"). As this cube is 3x3x3 you can see three blocks (let's say these are the levels from bottom to top) wich each three lines, each consisting of three letters which represent the 27 partials that the cube is constructe of. Let's take the element "a" which is called "el" in the script since it looks like the letter "L". The element "el" lays down in the bottom layer only and covers the right side of the bottom layer. Let's take the next element, "b", or "tee" how I called it, since it looks like the letter "T". This element has the *trunk of the "T"* in the middle of the upper row of the bottom layer. Then the upper structure of the "T" covers the first line of the second layer. 
