@@ -11,7 +11,9 @@ Well, I was not able to solve it within half an hour and asked my brother if I c
 ![Picture of 6 pink elements which can be combined to create a 3x3x3 cube](pink-elements-of-half-hour-puzzle.jpeg)
 
 ## The Puzzle Solver
-This puzzle is solved with the simple Python script `HalfHour-Puzzle-Solver.py`. This script is neither pretty, nor well structure, has hardly any documentation, is not optimized for performance may it be speed or memory usage. But it does the job, it was fun to develop and it tought me a bit about programming in Python. 
+This puzzle is solved with the simple Python script `HalfHour-Puzzle-Solver.py`, see [here](HalfHour-Puzzle-Solver.py).
+
+This script is neither pretty, nor well structure, has hardly any documentation, is not optimized for performance may it be speed or memory usage. But it does the job, it delivered a solution.  It was fun to develop and it tought me a bit about programming in Python. 
 
 I am quite sure you can simply copy and paste it into any Python environment and let it run there. 
 
@@ -29,6 +31,6 @@ With that, I was able to construct the solution of the puzzle. And yeah, it work
 
 ## References
 
-*[A short description of the puzzle by J. A. Storer which also shows a hint to the solution](https://www.cs.brandeis.edu/~storer/JimPuzzles/CUBE/HalfHour/HalfHour.pdf)
+* [A short description of the puzzle by J. A. Storer which also shows a hint to the solution](https://www.cs.brandeis.edu/~storer/JimPuzzles/CUBE/HalfHour/HalfHour.pdf)
 * [A 3D pinted version](https://www.printables.com/de/model/171109-half-hour-assembly-puzzle-by-stewart-coffin-stc-29)
 * [A wooden cube found on the Cubic Dissection Marketplace](https://market.cubicdissection.com/listing/half-hour-puzzle-stewart-coffin-eric-fuller/104084)
