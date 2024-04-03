@@ -1,4 +1,5 @@
-##### Pink Cube Solver
+##### Half Hour Puzzle Sover ######
+
 
 
 
@@ -30,6 +31,7 @@ def rotateZ(element):
         newDot = [newPos[0],newPos[1], z]
         r[i] = newDot
     return r
+
 ############
 # Rotate around X axis
 def rotateX(element):
@@ -43,6 +45,7 @@ def rotateX(element):
         newDot = [x, newPos[0],newPos[1]]
         r[i] = newDot
     return r
+
 ############
 # Rotate around Z axis
 def rotateY(element):
@@ -56,6 +59,7 @@ def rotateY(element):
         newDot = [newPos[0],y, newPos[1]]
         r[i] = newDot
     return r
+
 ############
 
 ###### Rotate Matrix
@@ -174,13 +178,15 @@ def recursiveAddElement(cube, superList, ElementPosition):
 				for z in range(-2,2):
 					isPossible = insertIntoCube(cube,rotatedElement,x,y,z)
 					if isPossible and ElementPosition == 5:
-						print("Hurra!!!")
+						print("Yeah, hurray, we found a solution!!!")
+						print("This is here is the solution: All 6 puzzle pieces fitted into a cube:")
 						printCube(cube)
 						sys.exit() #We are done
 					if isPossible and ElementPosition < 5: recursiveAddElement(cube, superList, ElementPosition + 1)
 					removeFromCube(cube,rotatedElement)
 	return True
 														
+####### Start of Script ########
 print("Start of the Puzzle Solver")
 print("Lets fill the rotate matrix")
 
@@ -192,18 +198,16 @@ tee1 	= ('c', (0,0,0),(0,1,0),(0,2,0),(1,1,0),(1,1,1))#ok
 elPlus= ('d', (0,0,0),(0,1,0),(0,2,0),(1,2,0),(0,1,1))
 ex   	= ('e', (0,0,0),(0,1,0),(1,1,0),(1,1,1))#ok
 eli  	= ('f', (0,0,0),(0,1,0),(1,1,0),(1,2,0),(1,1,1))#ok
-tester= ('g', (0,0,0),(0,1,0))
 
 
 print("Let's fill our rotated lists'")
-superList = [1,2,3,4,5,6,7] #Initialisierung
+superList = [1,2,3,4,5,6] #Initialisierung
 superList[0] = fillRotateList(eli)
 superList[1] = fillRotateList(elPlus)
 superList[2] = fillRotateList(tee1)
 superList[3] = fillRotateList(tee)
 superList[4] = fillRotateList(ex)
 superList[5] = fillRotateList(el)
-superList[6] = fillRotateList(tester)
 
 print("All rotations filled up")
 removeAllDuplicates(superList)
@@ -213,7 +217,7 @@ print("----------------")
 recursiveAddElement(emptyCube, superList, 0)
 
 
-print("Oops, we are done, but did not find the solution, yet? Program is wrong or puzzle is wrong.")
+print("Oops, we are done, but did not find the solution, yet? Program is wrong or the puzzle is a fake.")
 
 
 
