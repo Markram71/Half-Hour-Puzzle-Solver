@@ -11,6 +11,9 @@ Well, I was not able to solve it within half an hour and asked my brother if I c
 ![Picture of 6 pink elements which can be combined to create a 3x3x3 cube](pink-elements-of-half-hour-puzzle.jpeg)
 
 ## The Puzzle Solver
+This puzzle is solved with the simple Python script `HalfHour-Puzzle-Solver.py`. This script is neither pretty, nor well structure, has hardly any documentation, is not optimized for performance may it be speed or memory usage. But it does the job, it was fun to develop and it tought me a bit about programming in Python. 
+
+I am quite sure you can simply copy and paste it into any Python environment and let it run there. 
 
 
 ## The Result 
@@ -31,7 +34,9 @@ eff
 ccc`
 
 ### How to interprete the Result
-Each of the six elements is represented by a letter ("a" to "g"). 
+Each of the six elements is represented by a letter ("a" to "g"). As this cube is 3x3x3 you can see three blocks (let's say these are the levels from bottom to top) wich each three lines, each consisting of three letters which represent the 27 partials that the cube is constructe of. Let's take the element "a" which is called "el" in the script since it looks like the letter "L". The element "el" lays down in the bottom layer only and covers the right side of the bottom layer. Let's take the next element, "b", or "tee" how I called it, since it looks like the letter "T". This element has the *trunk of the "T"* in the middle of the upper row of the bottom layer. Then the upper structure of the "T" covers the first line of the second layer. 
+
+With that, I was able to construct the solution of the puzzle. And yeah, it worked. 
 
 ## References
 
