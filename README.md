@@ -27,7 +27,11 @@ The following lines are printed out to the console when the script finishes afte
 ### How to interprete the Result
 Each of the six elements is represented by a letter ("a" to "g"). As this cube is 3x3x3 you can see three blocks (let's say these are the levels from bottom to top) wich each three lines, each consisting of three letters which represent the 27 partials that the cube is constructe of. Let's take the element "a" which is called "el" in the script since it looks like the letter "L". The element "el" lays down in the bottom layer only and covers the right side of the bottom layer. Let's take the next element, "b", or "tee" how I called it, since it looks like the letter "T". This element has the *trunk of the "T"* in the middle of the upper row of the bottom layer. Then the upper structure of the "T" covers the first line of the second layer. 
 
-With that, I was able to construct the solution of the puzzle. And yeah, it worked. 
+With that, I was able solve the puzzle and put all pieces together. Yeah, it worked :-) 
+
+The following picture shows the completed puzzle and the script on an Ipad next to it. 
+
+![Completed Half-Hour Puzzle with the script on an Ipad next to it](completed-puzzle-with-script.png)
 
 ## References
 
