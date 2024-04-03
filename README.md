@@ -29,6 +29,6 @@ With that, I was able to construct the solution of the puzzle. And yeah, it work
 
 ## References
 
+*[A short description of the puzzle by J. A. Storer which also shows a hint to the solution](https://www.cs.brandeis.edu/~storer/JimPuzzles/CUBE/HalfHour/HalfHour.pdf)
 * [A 3D pinted version](https://www.printables.com/de/model/171109-half-hour-assembly-puzzle-by-stewart-coffin-stc-29)
-
 * [A wooden cube found on the Cubic Dissection Marketplace](https://market.cubicdissection.com/listing/half-hour-puzzle-stewart-coffin-eric-fuller/104084)
