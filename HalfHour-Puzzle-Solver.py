@@ -1,9 +1,32 @@
+###################################
 ##### Half Hour Puzzle Sover ######
+##### by Dr. Martin Kramer   ######
+###################################
+#
+# MIT License
+#
+# Copyright (c) 2024 Dr. Martin Kramer
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 
 
-
-# How full is the cube?
 import copy 	#we need to copy elements
 import sys 		#to end when we found the solution
 
@@ -181,42 +204,45 @@ def recursiveAddElement(cube, superList, ElementPosition):
 						print("Yeah, hurray, we found a solution!!!")
 						print("This is here is the solution: All 6 puzzle pieces fitted into a cube:")
 						printCube(cube)
-						sys.exit() #We are done
+						sys.exit() #We are done and should exit this script
 					if isPossible and ElementPosition < 5: recursiveAddElement(cube, superList, ElementPosition + 1)
 					removeFromCube(cube,rotatedElement)
 	return True
-														
+
+################################											
 ####### Start of Script ########
 print("Start of the Puzzle Solver")
 print("Lets fill the rotate matrix")
 
-###### Our Elements
+###### Define our six elements and the empty cube
 emptyCube = [[[0,0,0], [0,0,0], [0,0,0]], [[0,0,0], [0,0,0], [0,0,0]], [[0,0,0], [0,0,0], [0,0,0]]]
-el 		= ('a', (0,0,0),(0,1,0),(0,2,0),(1,0,0))#ok
-tee  	= ('b', (0,0,0),(0,1,0),(0,2,0),(1,1,0))#ok
-tee1 	= ('c', (0,0,0),(0,1,0),(0,2,0),(1,1,0),(1,1,1))#ok 
+el 		= ('a', (0,0,0),(0,1,0),(0,2,0),(1,0,0))
+tee  	= ('b', (0,0,0),(0,1,0),(0,2,0),(1,1,0))
+tee1 	= ('c', (0,0,0),(0,1,0),(0,2,0),(1,1,0),(1,1,1))
 elPlus= ('d', (0,0,0),(0,1,0),(0,2,0),(1,2,0),(0,1,1))
-ex   	= ('e', (0,0,0),(0,1,0),(1,1,0),(1,1,1))#ok
-eli  	= ('f', (0,0,0),(0,1,0),(1,1,0),(1,2,0),(1,1,1))#ok
+ex   	= ('e', (0,0,0),(0,1,0),(1,1,0),(1,1,1))
+eli  	= ('f', (0,0,0),(0,1,0),(1,1,0),(1,2,0),(1,1,1))
 
 
 print("Let's fill our rotated lists'")
-superList = [1,2,3,4,5,6] #Initialisierung
+superList = [1,2,3,4,5,6] #initialize the superList
 superList[0] = fillRotateList(eli)
 superList[1] = fillRotateList(elPlus)
 superList[2] = fillRotateList(tee1)
 superList[3] = fillRotateList(tee)
 superList[4] = fillRotateList(ex)
 superList[5] = fillRotateList(el)
-
 print("All rotations filled up")
+
 removeAllDuplicates(superList)
 print("All duplicates removed")
 print("----------------")
+
 ##### This is the main call to the puzzle solver
 recursiveAddElement(emptyCube, superList, 0)
+# in case we have found a solution, the script should have exited. 
 
-
+# So, the following line should only be executed in case we did not find a solution or something is wrong with the script...
 print("Oops, we are done, but did not find the solution, yet? Program is wrong or the puzzle is a fake.")
 
 
